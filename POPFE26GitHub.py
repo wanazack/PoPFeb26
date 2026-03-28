@@ -253,13 +253,6 @@ else:
         titles = [movie.title for movie in top_rated]
         avg_ratings = [movie.get_average_rating() for movie in top_rated]
 
-        fig, ax = plt.subplots(figsize=(8, 4))
-        ax.bar(titles, avg_ratings)
-        ax.set_title("Top Rated Movies")
-        ax.set_xlabel("Movie Title")
-        ax.set_ylabel("Average Rating")
-        plt.xticks(rotation=20)
-        st.pyplot(fig)
 
     elif menu == "Rate a Movie":
         st.subheader("Rate a Movie")
